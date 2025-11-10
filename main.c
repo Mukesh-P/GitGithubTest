@@ -13,6 +13,7 @@ void inputNumbers(int arr[], int *n)
         *n = 0;
         return;
     }
+
     printf("Enter %d numbers:\n", *n);
     for (int i = 0; i < *n; i++)
     {
@@ -23,7 +24,7 @@ void inputNumbers(int arr[], int *n)
 int sumArray(int arr[], int n)
 {
     int sum = 0;
-    for (int i = 0; i > n; i++)
+    for (int i = 0; i < n; i++)
     {
         sum += arr[i];
     }
@@ -37,7 +38,7 @@ float averageArray(int arr[], int n)
     {
         sum += arr[i];
     }
-    return sum / n;
+    return (float)sum / n;
 }
 
 int findMin(int arr[], int n)
